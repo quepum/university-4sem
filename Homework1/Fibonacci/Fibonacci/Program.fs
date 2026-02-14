@@ -8,7 +8,7 @@ let fibonacci n =
     | 0 -> Some 0I
     | 1 -> Some 1I
     | _ ->
-        let rec calc i (a: bigint) (b: bigint) =
+        let rec calc i a b =
             if i = n then b else calc (i + 1) b (b + a)
 
         Some(calc 1 0I 1I)
