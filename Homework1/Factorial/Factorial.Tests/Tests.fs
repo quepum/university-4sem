@@ -1,4 +1,8 @@
-﻿module Tests
+﻿// <copyright file="Tests.fs" author="Alina Letyagina">
+// under MIT License.
+// </copyright>
+
+module Tests
 
 open System
 open Factorial
