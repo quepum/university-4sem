@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ListFlipper", "ListFlipper\ListFlipper.fsproj", "{0DA9E96F-D4D8-4C91-88E5-0C2E7081C740}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ListFlipper.Tests", "ListFlipper.Tests\ListFlipper.Tests.fsproj", "{24ADB6C7-18F9-4260-A819-D1DEADA0C76E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DA9E96F-D4D8-4C91-88E5-0C2E7081C740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA9E96F-D4D8-4C91-88E5-0C2E7081C740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA9E96F-D4D8-4C91-88E5-0C2E7081C740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA9E96F-D4D8-4C91-88E5-0C2E7081C740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24ADB6C7-18F9-4260-A819-D1DEADA0C76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24ADB6C7-18F9-4260-A819-D1DEADA0C76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24ADB6C7-18F9-4260-A819-D1DEADA0C76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24ADB6C7-18F9-4260-A819-D1DEADA0C76E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
