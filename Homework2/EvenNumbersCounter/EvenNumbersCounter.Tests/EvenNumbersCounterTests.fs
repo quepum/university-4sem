@@ -20,15 +20,15 @@ let testCases () =
       [ 1..10 ], 5 ]
     |> List.map (fun (list, res) -> TestCaseData(list, res))
 
-[<TestCaseSource("cases")>]
+[<TestCaseSource("testCases")>]
 let ``count using filter returns expected result`` list expected =
     test <@ countEvenNumbersWithFilter list = expected @>
 
-[<TestCaseSource("cases")>]
+[<TestCaseSource("testCases")>]
 let ``count using map returns expected result`` list expected =
     test <@ countEvenNumbersWithMap list = expected @>
 
-[<TestCaseSource("cases")>]
+[<TestCaseSource("testCases")>]
 let ``count using fold returns expected result`` list expected =
     test <@ countEvenNumbersWithFold list = expected @>
 
