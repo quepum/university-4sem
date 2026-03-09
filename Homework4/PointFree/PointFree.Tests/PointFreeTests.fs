@@ -9,4 +9,5 @@ open PointFree
 let ``point-free func equals original`` () =
     let property x (l: int list) =
         func'4 x l = List.map (fun y -> y * x) l
+
     Check.QuickThrowOnFailure property
