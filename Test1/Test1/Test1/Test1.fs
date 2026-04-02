@@ -28,16 +28,15 @@ module Test1 =
     // Prints a square using getSquareLines.
     let printSquare n =
         getSquareLines n |> List.iter (printfn "%s")
-        
+
     // Hash Table implementation.
     type HashTable<'T>(capacity, hashFunc) =
-       
+
         let mutable buckets: list<'T> array = Array.init capacity (fun _ -> [])
-        
+
         let getBucketIndex item =
             let hash = hashFunc item
             abs hash % capacity
-            
+
         member this.Clear() =
             buckets <- Array.init (Array.length buckets) (fun _ -> [])
-            
