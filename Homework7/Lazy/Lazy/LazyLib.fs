@@ -68,4 +68,3 @@ type LockFreeLazy<'a when 'a: not struct>(supplier: unit -> 'a) =
                     match actualOldState :?> LazyState<'a> with
                     | Calculated v -> v
                     | NotCalculated _ -> res
-
