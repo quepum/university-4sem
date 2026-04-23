@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockingQueue", "BlockingQueue\BlockingQueue.fsproj", "{312CDFC2-1F44-4328-88FD-FA3CD8DF6E5C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockingQueue.Tests", "BlockingQueue.Tests\BlockingQueue.Tests.fsproj", "{BD612E3D-66B3-4985-A2F2-C01CC71B16FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312CDFC2-1F44-4328-88FD-FA3CD8DF6E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312CDFC2-1F44-4328-88FD-FA3CD8DF6E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312CDFC2-1F44-4328-88FD-FA3CD8DF6E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312CDFC2-1F44-4328-88FD-FA3CD8DF6E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD612E3D-66B3-4985-A2F2-C01CC71B16FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD612E3D-66B3-4985-A2F2-C01CC71B16FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD612E3D-66B3-4985-A2F2-C01CC71B16FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD612E3D-66B3-4985-A2F2-C01CC71B16FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
