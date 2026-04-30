@@ -1,0 +1,49 @@
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\setmainfont{CMU Serif}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\subsection*{Грамматика}
+
+\begin{verbatim}
+Program     = { Definition }, Expression ;
+
+Definition  = "let", id, "=", Expression ;
+
+Expression  = "\", id, { id }, ".", Expression 
+            | Application ;
+
+Application = Term, { Term } ;
+
+Term        = id 
+            | "(", Expression, ")" ;
+
+id          = letter, { letter | digit | "_" } ;
+\end{verbatim}
+
+\subsection*{Примеры вывода}
+
+\begin{enumerate}
+    \item \textbf{\texttt{\textbackslash x y. x}}
+    \begin{itemize}
+        \item $Expression \Rightarrow \backslash \, id(x) \, \{ id(y) \} \, . \, Expression$
+        \item $Expression \Rightarrow Application \Rightarrow Term \Rightarrow id(x)$
+        \item \textbf{Результат:} $\backslash x \, y . x$
+    \end{itemize}
+
+    \item \textbf{\texttt{x (y z)}}
+    \begin{itemize}
+        \item $Expression \Rightarrow Application$
+        \item $Application \Rightarrow Term_1 \, \{ Term_2 \}$
+        \item $Term_1 \Rightarrow id(x)$
+        \item $Term_2 \Rightarrow ( Expression ) \Rightarrow ( Application ) \Rightarrow ( Term_3 \, Term_4 )$
+        \item $Term_3 \Rightarrow id(y), Term_4 \Rightarrow id(z)$
+        \item \textbf{Результат:} $x \, (y \, z)$
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
