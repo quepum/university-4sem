@@ -1,0 +1,15 @@
+\documentclass{article}
+
+\title{homework3.2}
+\author{Alina Letyagina}
+
+\begin{document}
+
+$$S \ K \ K \equiv (\lambda x\ y\ z.x\ z\ (y\ z))\ (\lambda x\ y.x)\ (\lambda x\ y.x) \rightarrow_\beta$$
+$$(\lambda y\ z.(\lambda x\ y.x)\ z\ (y\ z))\ (\lambda x\ y.x) \rightarrow_\beta$$
+$$\lambda z.(\lambda x\ y.x)\ z\ ((\lambda x\ y.x)\ z) \rightarrow_\beta$$
+$$\lambda z.(\lambda x\ y.x)\ z\ (\lambda y.z) \rightarrow_\beta$$
+$$\lambda z.(\lambda y.z)\ (\lambda y.z) \rightarrow_\beta$$
+$$\lambda z.z \equiv I$$
+
+\end{document}
