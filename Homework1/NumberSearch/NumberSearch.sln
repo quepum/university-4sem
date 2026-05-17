@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberSearch", "NumberSearch\NumberSearch.fsproj", "{E8F08421-CFE6-4689-8189-46CF0D333AD8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberSearch.Tests", "NumberSearch.Tests\NumberSearch.Tests.fsproj", "{AF31629F-39C9-4D3D-8729-01ECBA527FEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8F08421-CFE6-4689-8189-46CF0D333AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F08421-CFE6-4689-8189-46CF0D333AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F08421-CFE6-4689-8189-46CF0D333AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F08421-CFE6-4689-8189-46CF0D333AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF31629F-39C9-4D3D-8729-01ECBA527FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF31629F-39C9-4D3D-8729-01ECBA527FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF31629F-39C9-4D3D-8729-01ECBA527FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF31629F-39C9-4D3D-8729-01ECBA527FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
