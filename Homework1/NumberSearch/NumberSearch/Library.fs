@@ -9,6 +9,7 @@ module NumberSearch =
         let rec calc index =
             function
             | [] -> None
-            | head :: tail -> if head = n then Some index else calc (index + 1) tail
+            | head :: _ when head = n -> Some index
+            | _ :: tail -> calc (index + 1) tail
 
         calc 0 ls
