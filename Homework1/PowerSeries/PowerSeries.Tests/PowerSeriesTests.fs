@@ -6,11 +6,11 @@ module PowerSeries.Tests
 
 open NUnit.Framework
 open Swensen.Unquote
-open PowerSeries.PowerSeries
+open PowerSeries
 
 
 [<Test>]
-let ``getPowers returns empty list for negative n`` () = test <@ getPowers -1 5 = [] @>
+let ``getPowers returns list of zeroes for negative n`` () = test <@ getPowers -1 5 = [0I; 0I; 0I; 0I; 0I; 0I] @>
 
 [<Test>]
 let ``getPowers returns empty list for negative m`` () = test <@ getPowers 3 -2 = [] @>

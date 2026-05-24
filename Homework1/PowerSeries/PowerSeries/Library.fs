@@ -2,16 +2,17 @@
 // under MIT License.
 // </copyright>
 
-namespace PowerSeries
 
-module PowerSeries =
-    let getPowers n m =
-        if n < 0 || m < 0 then
-            []
-        else
-            let powerOfTwo = bigint.Pow(2, n)
+module PowerSeries
+let getPowers n m =
+    match m < 0 with
+    | true -> []
+    | false ->
+        let powerOfTwo = bigint (2.0 ** float n)
 
-            let rec calc curr i =
-                if i > m then [] else curr :: calc (curr * 2I) (i + 1)
+        let rec calc curr i acc =
+            match i > m with
+            | true -> List.rev acc
+            | false -> calc (curr * 2I) (i + 1) (curr :: acc)
 
-            calc powerOfTwo 0
+        calc powerOfTwo 0 []
