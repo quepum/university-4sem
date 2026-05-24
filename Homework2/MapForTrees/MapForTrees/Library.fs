@@ -5,9 +5,10 @@
 namespace MapForTrees
 
 module MapForTrees =
-    let rec treeMap func =
-        function
-        | Empty -> Empty
-        | Node(value, left, right) -> Node(func value, treeMap func left, treeMap func right)
+    let treeMap func tree =
+        let rec treeMapRecursive =
+            function
+            | Empty -> Empty
+            | Node(value, left, right) -> Node(func value, treeMapRecursive left, treeMapRecursive right)
 
         treeMapRecursive tree
