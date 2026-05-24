@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ParsingTree", "ParsingTree\ParsingTree.fsproj", "{D88DE75A-124C-4284-9C69-CFB2DBA7C395}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ParsingTree.Tests", "ParsingTree.Tests\ParsingTree.Tests.fsproj", "{C4A42153-2978-458E-88CD-FA116C7B2C89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88DE75A-124C-4284-9C69-CFB2DBA7C395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88DE75A-124C-4284-9C69-CFB2DBA7C395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88DE75A-124C-4284-9C69-CFB2DBA7C395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88DE75A-124C-4284-9C69-CFB2DBA7C395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A42153-2978-458E-88CD-FA116C7B2C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A42153-2978-458E-88CD-FA116C7B2C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A42153-2978-458E-88CD-FA116C7B2C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A42153-2978-458E-88CD-FA116C7B2C89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
