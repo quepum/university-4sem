@@ -4,6 +4,7 @@
 
 
 module PowerSeries
+
 let getPowers n m =
     match m < 0 with
     | true -> []

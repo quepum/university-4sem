@@ -10,7 +10,8 @@ open PowerSeries
 
 
 [<Test>]
-let ``getPowers returns list of zeroes for negative n`` () = test <@ getPowers -1 5 = [0I; 0I; 0I; 0I; 0I; 0I] @>
+let ``getPowers returns list of zeroes for negative n`` () =
+    test <@ getPowers -1 5 = [ 0I; 0I; 0I; 0I; 0I; 0I ] @>
 
 [<Test>]
 let ``getPowers returns empty list for negative m`` () = test <@ getPowers 3 -2 = [] @>
