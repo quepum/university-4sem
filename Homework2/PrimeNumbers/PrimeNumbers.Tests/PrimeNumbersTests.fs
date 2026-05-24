@@ -6,7 +6,7 @@ module PrimeNumbers.Tests
 
 open NUnit.Framework
 open Swensen.Unquote
-open PrimeNumbers.PrimeNumbers
+open PrimeNumbers
 
 
 [<Test>]
