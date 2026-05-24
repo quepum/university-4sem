@@ -1,12 +1,17 @@
-﻿namespace PointFree
+﻿// <copyright file="Library.fs" author="Alina Letyagina">
+// under MIT License.
+// </copyright>
 
-module PointFree =
-    let func x l = List.map (fun y -> y * x) l
+module PointFree
 
-    let func'1 x = List.map (fun y -> y * x)
+let mulEach x l = List.map (fun y -> y * x) l
 
-    let func'2 x = List.map ((*) x)
+let mulEach'1 x = List.map (fun y -> y * x)
 
-    let func'3 x = (List.map << (*)) x
+let mulEach'2 x = List.map (fun y -> x * y)
 
-    let func'4 = List.map << (*)
+let mulEach'3 x = List.map ((*) x)
+
+let mulEach'4 x = (List.map << (*)) x
+
+let mulEach'5 = List.map << (*)
