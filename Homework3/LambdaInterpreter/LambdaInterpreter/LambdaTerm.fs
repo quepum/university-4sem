@@ -2,7 +2,7 @@
 // under MIT License.
 // </copyright>
 
-namespace LambdaInterpreter
+module LambdaInterpreter.LambdaTerm
 
 type LambdaTerm =
     | Variable of string
